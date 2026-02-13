@@ -10,6 +10,24 @@ A beautiful, interactive Valentine's Day website built with React, Vite, and Fra
 - 🎭 Smooth animations with Framer Motion
 - 📱 Responsive design
 
+## Configuration
+
+### Setting the Girlfriend's Name
+
+Create a `.env` file in the root directory (copy from `.env.example`):
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and set the name:
+
+```
+VITE_GIRLFRIEND_NAME=Your Girlfriend's Name
+```
+
+Replace `Your Girlfriend's Name` with the actual name you want to display.
+
 ## Local Development
 
 ```bash

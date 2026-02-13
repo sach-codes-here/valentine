@@ -28,7 +28,7 @@ export default function ValentineSite() {
   const [noBtnPos, setNoBtnPos] = useState({ x: 0, y: 0 });
   const [surpriseMessage, setSurpriseMessage] = useState(null);
 
-  const herName = "Ravi"; // TODO: Change this 💖
+  const herName = import.meta.env.VITE_GIRLFRIEND_NAME || "Your Girlfriend's Name";
 
   const showSurpriseMessage = () => {
     const msg = ROMANTIC_MESSAGES[Math.floor(Math.random() * ROMANTIC_MESSAGES.length)];
