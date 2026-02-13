@@ -1,16 +1,51 @@
-# React + Vite
+# Valentine's Day Surprise Site 💕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, interactive Valentine's Day website built with React, Vite, and Framer Motion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✨ Beautiful animated Valentine's Day card
+- 💕 Romantic messages that appear on button clicks
+- 🎨 Modern UI with Tailwind CSS
+- 🎭 Smooth animations with Framer Motion
+- 📱 Responsive design
 
-## React Compiler
+## Local Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Deployment to GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Setup Instructions:
+
+1. **Create a GitHub repository** (if you haven't already)
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+2. **Enable GitHub Pages**:
+   - Go to your repository on GitHub
+   - Click on **Settings** → **Pages**
+   - Under **Source**, select **GitHub Actions**
+   - Save the settings
+
+3. **Push your code**:
+   ```bash
+   git add .
+   git commit -m "Setup GitHub Pages deployment"
+   git push
+   ```
+
+4. **Wait for deployment**: The GitHub Actions workflow will automatically build and deploy your site. You can check the progress in the **Actions** tab.
+
+5. **Access your site**: Once deployed, your site will be available at:
+   `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
+The deployment happens automatically on every push to the `main` or `master` branch!
