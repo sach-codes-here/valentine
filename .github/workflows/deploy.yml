@@ -37,6 +37,7 @@ jobs:
         env:
           GITHUB_PAGES: true
           VITE_BASE_PATH: /${{ github.event.repository.name }}/
+          VITE_GIRLFRIEND_NAME: ${{ secrets.VITE_GIRLFRIEND_NAME || vars.VITE_GIRLFRIEND_NAME || 'Your Girlfriend\'s Name' }}
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

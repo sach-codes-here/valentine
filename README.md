@@ -54,16 +54,25 @@ This project is configured to automatically deploy to GitHub Pages using GitHub 
    - Under **Source**, select **GitHub Actions**
    - Save the settings
 
-3. **Push your code**:
+3. **Set the Girlfriend's Name for Production** (Optional):
+   - Go to **Settings** → **Secrets and variables** → **Actions**
+   - Click **New repository secret**
+   - Name: `VITE_GIRLFRIEND_NAME`
+   - Value: The name you want to display (e.g., "Sarah")
+   - Click **Add secret**
+   
+   Alternatively, you can use **Variables** instead of **Secrets** if you prefer.
+
+4. **Push your code**:
    ```bash
    git add .
    git commit -m "Setup GitHub Pages deployment"
    git push
    ```
 
-4. **Wait for deployment**: The GitHub Actions workflow will automatically build and deploy your site. You can check the progress in the **Actions** tab.
+5. **Wait for deployment**: The GitHub Actions workflow will automatically build and deploy your site. You can check the progress in the **Actions** tab.
 
-5. **Access your site**: Once deployed, your site will be available at:
+6. **Access your site**: Once deployed, your site will be available at:
    `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
 
 The deployment happens automatically on every push to the `main` or `master` branch!
